@@ -38,7 +38,7 @@ const SignIn = () => {
         .from("profiles")
         .select("*")
         .eq("username", username)
-        .eq("role", selectedRole as string)
+        .eq("role", selectedRole as "student" | "tutor")
         .maybeSingle();
 
       if (profileError) throw profileError;
