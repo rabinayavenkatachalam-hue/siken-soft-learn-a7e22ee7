@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useNavigate, Outlet, useLocation } from "react-router-dom";
 import { LayoutDashboard, BookOpen, FileText, FolderOpen, Upload, LogOut, GraduationCap } from "lucide-react";
 import { useUser } from "@/contexts/UserContext";
