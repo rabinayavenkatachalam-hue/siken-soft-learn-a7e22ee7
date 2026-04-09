@@ -65,7 +65,7 @@ const CreateAccount = () => {
         .from("profiles")
         .select("id")
         .eq("username", username)
-        .eq("role", selectedRole)
+        .eq("role", selectedRole as "student" | "tutor")
         .maybeSingle();
 
       if (existing) {
