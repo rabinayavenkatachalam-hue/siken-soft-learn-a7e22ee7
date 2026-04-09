@@ -110,7 +110,7 @@ const CreateAccount = () => {
         // Create user_roles entry
         await supabase.from("user_roles").insert({
           user_id: authData.user.id,
-          role: selectedRole,
+          role: selectedRole as "student" | "tutor",
         });
 
         login({

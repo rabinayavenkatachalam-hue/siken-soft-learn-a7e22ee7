@@ -51,7 +51,7 @@ const ResetPassword = () => {
         .from("profiles")
         .select("email, user_id")
         .eq("username", username)
-        .eq("role", selectedRole)
+        .eq("role", selectedRole as "student" | "tutor")
         .maybeSingle();
 
       if (!profile) {
