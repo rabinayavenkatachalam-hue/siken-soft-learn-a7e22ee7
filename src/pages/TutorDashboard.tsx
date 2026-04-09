@@ -1,6 +1,5 @@
 import { useState } from "react";
-import { useNavigate, Link, Outlet, useLocation } from "react-router-dom";
-import { motion } from "framer-motion";
+import { useNavigate, Outlet, useLocation } from "react-router-dom";
 import { LayoutDashboard, BookOpen, FileText, FolderOpen, Upload, LogOut, GraduationCap } from "lucide-react";
 import { useUser } from "@/contexts/UserContext";
 import { Button } from "@/components/ui/button";

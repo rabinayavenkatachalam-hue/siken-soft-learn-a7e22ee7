@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { Search, Menu, X, Star, BookOpen, Clock, BarChart3, LogOut } from "lucide-react";
+import { Search, Menu, Star, BookOpen, Clock, BarChart3, LogOut } from "lucide-react";
 import { useUser } from "@/contexts/UserContext";
 import { courses } from "@/data/courses";
 import { Input } from "@/components/ui/input";

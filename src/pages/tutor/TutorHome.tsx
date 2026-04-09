@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend } from "recharts";
-import { AlertTriangle, MessageSquare, FileText, Users, BookOpen } from "lucide-react";
+import { AlertTriangle, MessageSquare, FileText, Users } from "lucide-react";
 
 const performanceData = Array.from({ length: 30 }, (_, i) => ({
   day: `Day ${i + 1}`,
