@@ -49,7 +49,7 @@ const SignIn = () => {
           .from("profiles")
           .select("role")
           .eq("username", username)
-          .maybeSingle();
+          .maybeSingle() as { data: { role: string } | null };
 
         if (otherProfile) {
           toast({ title: "Account role mismatch", description: `Please sign in as a ${otherProfile.role}.`, variant: "destructive" });
