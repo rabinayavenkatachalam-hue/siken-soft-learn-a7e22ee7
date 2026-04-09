@@ -23,10 +23,11 @@ const TutorDashboard = () => {
   const [uploadFiles, setUploadFiles] = useState<File[]>([]);
   const [notesName, setNotesName] = useState("");
 
-  if (!isLoggedIn) {
-    navigate("/select-role");
-    return null;
-  }
+  useEffect(() => {
+    if (!isLoggedIn) navigate("/select-role");
+  }, [isLoggedIn, navigate]);
+
+  if (!isLoggedIn) return null;
 
   const handleFileSelect = (e: React.ChangeEvent<HTMLInputElement>) => {
     const files = Array.from(e.target.files || []);
