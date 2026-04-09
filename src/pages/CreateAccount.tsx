@@ -102,7 +102,7 @@ const CreateAccount = () => {
           user_id: authData.user.id,
           username,
           email,
-          role: selectedRole,
+          role: selectedRole as "student" | "tutor",
         });
 
         if (profileError) throw profileError;
