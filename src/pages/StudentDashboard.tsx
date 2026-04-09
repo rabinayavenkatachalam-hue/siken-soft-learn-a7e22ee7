@@ -13,10 +13,11 @@ const StudentDashboard = () => {
   const { username, enrolledCourses, logout, isLoggedIn } = useUser();
   const [searchQuery, setSearchQuery] = useState("");
 
-  if (!isLoggedIn) {
-    navigate("/select-role");
-    return null;
-  }
+  useEffect(() => {
+    if (!isLoggedIn) navigate("/select-role");
+  }, [isLoggedIn, navigate]);
+
+  if (!isLoggedIn) return null;
 
   const filteredCourses = courses.filter(
     (c) =>
