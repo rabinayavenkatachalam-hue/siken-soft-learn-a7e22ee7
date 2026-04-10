@@ -11,6 +11,8 @@ import ResetPassword from "./pages/ResetPassword";
 import CreateAccount from "./pages/CreateAccount";
 import StudentDashboard from "./pages/StudentDashboard";
 import CourseDetails from "./pages/CourseDetails";
+import CourseRoadmap from "./pages/CourseRoadmap";
+import ModuleLearning from "./pages/ModuleLearning";
 import EnrollmentSuccess from "./pages/EnrollmentSuccess";
 import TutorDashboard from "./pages/TutorDashboard";
 import TutorHome from "./pages/tutor/TutorHome";
@@ -36,6 +38,9 @@ const App = () => (
             <Route path="/create-account" element={<CreateAccount />} />
             <Route path="/dashboard/student" element={<StudentDashboard />} />
             <Route path="/course/:id" element={<CourseDetails />} />
+            <Route path="/course/:id/roadmap" element={<CourseRoadmap />} />
+            <Route path="/course/:id/module/:moduleIndex" element={<ModuleLearning />} />
+            <Route path="/enrollment-success" element={<EnrollmentSuccess />} />
             <Route path="/enrollment-success" element={<EnrollmentSuccess />} />
             <Route path="/dashboard/tutor" element={<TutorDashboard />}>
               <Route index element={<TutorHome />} />
