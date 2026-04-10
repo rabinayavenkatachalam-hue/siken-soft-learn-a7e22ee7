@@ -38,6 +38,9 @@ const App = () => (
             <Route path="/create-account" element={<CreateAccount />} />
             <Route path="/dashboard/student" element={<StudentDashboard />} />
             <Route path="/course/:id" element={<CourseDetails />} />
+            <Route path="/course/:id/roadmap" element={<CourseRoadmap />} />
+            <Route path="/course/:id/module/:moduleIndex" element={<ModuleLearning />} />
+            <Route path="/enrollment-success" element={<EnrollmentSuccess />} />
             <Route path="/enrollment-success" element={<EnrollmentSuccess />} />
             <Route path="/dashboard/tutor" element={<TutorDashboard />}>
               <Route index element={<TutorHome />} />
