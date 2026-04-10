@@ -11,6 +11,8 @@ import ResetPassword from "./pages/ResetPassword";
 import CreateAccount from "./pages/CreateAccount";
 import StudentDashboard from "./pages/StudentDashboard";
 import CourseDetails from "./pages/CourseDetails";
+import CourseRoadmap from "./pages/CourseRoadmap";
+import ModuleLearning from "./pages/ModuleLearning";
 import EnrollmentSuccess from "./pages/EnrollmentSuccess";
 import TutorDashboard from "./pages/TutorDashboard";
 import TutorHome from "./pages/tutor/TutorHome";
